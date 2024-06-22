@@ -1,0 +1,85 @@
+* {
+    color: var(--white);
+    font-family: var(--titillium);
+    background-color: var(--background-solid);
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-account__container {
+    height: 750px;
+    width: 375px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.close-icon {
+    width: 20px;
+    height: 20px;
+    margin: 40px 30px;
+}
+
+.create-account__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.steps {
+    width: 224px;
+    height: 3px;
+    margin-top: 36px;
+}
+
+.create-account__content > h2 {
+    font-size: 1.625rem;
+    margin-top: 35px;
+}
+
+.create-account_form {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.create-account__label {
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--white60);
+    padding-bottom: 5px;
+}
+
+.create-account__input {
+    font-size: .875rem;
+    height: 56px;
+    width: 311px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 6%;
+    padding-left: 10px;
+}
+
+.create-account__content > button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -50px;
+    font-family: var(--titillium);
+    font-size: 1rem;
+}
+
+#toggle-password {
+    position: relative;
+    top: -47px;
+    right: -278px;
+}
