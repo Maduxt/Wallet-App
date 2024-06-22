@@ -1,0 +1,25 @@
+.btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 99px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.btn.grey {
+    background-color: var(--buttongrey);
+}
+
+.btn.green {
+    background-color: var(--lightgreen);
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
