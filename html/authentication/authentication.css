@@ -1,0 +1,76 @@
+* {
+    color: var(--white);
+    font-family: var(--titillium);
+    background-color: var(--background-solid);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authentication-container {
+    height: 750px;
+    width: 375px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    margin: 35px 30px;
+}
+
+.authentication-step {
+    margin-bottom: 30px;
+}
+
+.authentication-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authentication-content > h2 {
+    margin-bottom: 20px;
+}
+
+.authentication-content > pre {
+    margin-bottom: 35px;
+}
+
+.authentication-label {
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--white60);
+    padding-bottom: 8px;
+}
+
+.authentication-input {
+    font-size: .875rem;
+    height: 50px;
+    width: 221px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 6%;
+    padding-left: 10px;
+}
+
+.authentication-input__sm {
+    height: 50px;
+    width: 82px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.authentication-button {
+    margin-top: 300px;
+}
