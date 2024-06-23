@@ -7,6 +7,7 @@ body {
     color: var(--white);
     font-family: var(--popins);
     box-sizing: border-box;
+    height: 100vh;
 }
 
 .loading-container {
