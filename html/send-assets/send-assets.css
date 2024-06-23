@@ -11,16 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.closeIcon {
-    width: 12px;
-    height: 12px;
+    height: 100vh;
 }
 
 .container {
@@ -34,6 +25,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.closeIcon {
+    width: 12px;
+    height: 12px;
 }
 
 .portfolio {
