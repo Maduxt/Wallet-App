@@ -6,19 +6,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/button.css">
+    <link rel="stylesheet" href="./loading-home.css">
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Home</title>
 </head>
 <body>
+
     <section class="container">
-        <header class="home-header">
+
+        <header class="header">
             <img class="header-image" src="../../assets/profile.png" alt="Profile">
             <div class="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <i class="fa fa-bell" aria-hidden="true"></i>
             </div>
     </header>
+
     <section class="home-wallet">
         <h1>Hello Samantha 👋</h1>
         <div class="home-card">
@@ -27,31 +31,144 @@
                 <img class="qrcode" src="../../assets/qrcode.png" alt="QR-Code">
             </div>
             <div class="main-card">
-                <p class="value">$ 0,00</p>
+                <p class="value">$ 9.531,70</p>
                 <p class="balance">Total balance</p>
             </div>
-            <div class="footer-card">
-                <p>Your wallet is empty</p>
+            <div class="footer-card__home">
+                <p class="numbers-card">$ 1.250,80</p>
+                <p class="p-card">This month</p>
+            </div>
+            <div class="percentage">
+                <p>+ 20%</p>
             </div>
         </div>
     </section>
+
     <section class="home-trending">
         <h2>Trending coins</h2>
-        <img class="slider" src="../../assets/slider.png" alt="Slider">
-    </section>
-    <section class="home-portfolio">
-        <h2>My portfolio</h2>
-        <div class="portfolio-explore">
-            <div class="container-explore">
-                <h3 class="title">No assets in portfolio</h3>
-                <p>Start trading or explore our marketplace</p>
-                <img class="arrowRight" src="../../assets/arrowRight.png" alt=">">
+        <div class="home-trending__content">
+            <div class="financial">
+                <div class="div-images">
+                    <img class="image-enterprise" src="../../assets/Matic.png" alt="MATIC">
+                    <img class="chart" src="../../assets/GreenChart.png" alt="Green Chart">
+                </div>
+                <div class="div-name">
+                    <h3>MATIC</h3> 
+                    <p>USD 1.13</p>
+                </div>
+                <div class="div-percentage">
+                    <p class="percentage-green">5.20%</p>
+                    <img src="../../assets/buttonGREEN.png" alt="button green">
+                </div>
+            </div>
+            <div class="financial">
+                <div class="div-images">
+                    <img class="image-enterprise" src="../../assets/BNB.png" alt="BNB">
+                    <img class="chart" src="../../assets/RedChart.png" alt="Red Chart">
+                </div>
+                <div class="div-name">
+                    <h3>BNB</h3> 
+                    <p>USD 324.37</p>
+                </div>
+                <div class="div-percentage">
+                    <p class="percentage-red">19.80 %</p>
+                    <img src="../../assets/buttonRED.png" alt="red button">
+                </div>
+            </div>
+            <div class="financial-type2">
+                <img class="image-enterprise" src="../../assets/XRP.png" alt="XRP">
+                <h3>XRP</h3> 
+                <p class="percentage-red">16.</p>
             </div>
         </div>
     </section>
-    <footer class="home-footer">
-        <img src="../../assets/footerHome.png" alt="footer">
+
+    <section class="portfolio">
+        <h2>My portfolio</h2>
+        <div>
+            <div class="portfolio-list">
+                <img class="img-interprise" src="../../assets/ETH.png" alt="ETH">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">ETH</h3>
+                        <p class="value-eth">+ 2.56</p>
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$4.240,50</p>
+                        <p class="cripto-decrease">25 ETH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-list">
+                <img class="img-interprise" src="../../assets/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">- 1.20</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="dropdown">
+            <img src="../../assets/footerHome.png" class="dropdown-toggle" id="dropdownMenuButton" data-alt-src="../../assets/NavigationBar.png">
+            <div class="dropdown-menu" id="dropdownMenu">
+                <div class="menu-button">
+                    <div>
+                        <button class="dropdown-item"><img class="img-button" src="../../assets/buyButton.png" alt="button"></button>
+                        <p>Buy</p>
+                    </div>
+                    <div>
+                        <button class="dropdown-item"><img class="img-button" src="../../assets/sellButton.png" alt="button"></button>
+                        <p>Sell</p>
+                    </div>
+                    <div>
+                        <button class="dropdown-item"><img class="img-button" src="../../assets/exchangeButton.png" alt="button"></button>
+                        <p>Exchange</p>
+                    </div>
+                    <div>
+                        <button class="dropdown-item" onclick="irParaOutraPagina()" ><img class="img-button send" src="../../assets/sendButton.png" alt="button"></button>
+                        <p>Send</p>
+                    </div>
+                    <div>
+                        <button class="dropdown-item"><img class="img-button" src="../../assets/receiveButton.png" alt="button"></button>
+                        <p>Receive</p>
+                    </div>
+                </div>
+            </div>
     </footer>
+
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const dropdownToggle = document.getElementById('dropdownMenuButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownToggle.addEventListener('click', () => {
+        // Alterna a exibição do menu suspenso
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+
+        // Troca a imagem
+        const currentSrc = dropdownToggle.getAttribute('src');
+        const altSrc = dropdownToggle.getAttribute('data-alt-src');
+        dropdownToggle.setAttribute('src', altSrc);
+        dropdownToggle.setAttribute('data-alt-src', currentSrc);
+    });
+});
+</script>
+
+<script>
+    function irParaOutraPagina() {
+      window.location.href = '../send-assets/send-assets.html';
+    }
+</script>
+
 </body>
 </html>
