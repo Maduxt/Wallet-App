@@ -19,7 +19,7 @@
             <img class="header-image" src="../../assets/profile.png" alt="Profile">
             <div class="search">
                 <i class="fa fa-search" aria-hidden="true"></i>
-                <i class="fa fa-bell" aria-hidden="true"></i>
+                <button onClick='irParaNotificacoes()' class="bell-button"><i class="fa fa-bell" aria-hidden="true"></i></button>
             </div>
     </header>
 
@@ -86,7 +86,7 @@
     <section class="portfolio">
         <h2>My portfolio</h2>
         <div>
-            <div class="portfolio-list">
+            <button onclick="irParaMoeda()" class="portfolio-list">
                 <img class="img-interprise" src="../../assets/ETH.png" alt="ETH">
                 <div class="portfolio-content">
                     <div>
@@ -98,7 +98,7 @@
                         <p class="cripto-decrease">25 ETH</p>
                     </div>
                 </div>
-            </div>
+            </button>
             <div class="portfolio-list">
                 <img class="img-interprise" src="../../assets/BTC.png" alt="BTC">
                 <div class="portfolio-content">
@@ -167,6 +167,14 @@
 <script>
     function irParaOutraPagina() {
       window.location.href = '../send-assets/send-assets.html';
+    }
+
+    function irParaNotificacoes() {
+        window.location.href = '../notifications/notifications.html';
+    }
+
+    function irParaMoeda() {
+        window.location.href = "../coin/coinETH.html";
     }
 </script>
 

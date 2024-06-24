@@ -12,6 +12,11 @@ body {
     margin-top: 30px;
 }
 
+.bell-button {
+    background: none;
+    border: 0;
+}
+
 .footer-card__home {
     width: 150px;
     display: flex;
@@ -60,6 +65,8 @@ body {
     align-items: center;
     border-radius: 16px;
     padding-left: 10px;
+    border: 0;
+    cursor: pointer;
 }
 
 .portfolio-content {
