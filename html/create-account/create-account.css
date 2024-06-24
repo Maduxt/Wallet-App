@@ -3,6 +3,7 @@
     font-family: var(--titillium);
     background-color: var(--background-solid);
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -21,9 +22,9 @@ body {
 }
 
 .close-icon {
-    width: 20px;
-    height: 20px;
-    margin: 40px 30px;
+    width: 12.73px;
+    height: 12.73px;
+    margin: 40px 30px 20px 30px;
 }
 
 .create-account__content {
@@ -37,12 +38,12 @@ body {
 .steps {
     width: 224px;
     height: 3px;
-    margin-top: 36px;
+    margin-top: 50px;
 }
 
 .create-account__content > h2 {
     font-size: 1.625rem;
-    margin-top: 35px;
+    margin: 25px 0 20px 0;
 }
 
 .create-account_form {
@@ -74,7 +75,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: -50px;
+    bottom: -60px;
     font-family: var(--titillium);
     font-size: 1rem;
 }

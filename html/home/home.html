@@ -115,38 +115,44 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        
-    </footer>
-
-    <footer class="dropdown">
-            <img src="../../assets/footerHome.png" class="dropdown-toggle" id="dropdownMenuButton" data-alt-src="../../assets/NavigationBar.png">
-            <div class="dropdown-menu" id="dropdownMenu">
-                <div class="menu-button">
-                    <div>
-                        <button class="dropdown-item"><img class="img-button" src="../../assets/buyButton.png" alt="button"></button>
-                        <p>Buy</p>
-                    </div>
-                    <div>
-                        <button class="dropdown-item"><img class="img-button" src="../../assets/sellButton.png" alt="button"></button>
-                        <p>Sell</p>
-                    </div>
-                    <div>
-                        <button class="dropdown-item"><img class="img-button" src="../../assets/exchangeButton.png" alt="button"></button>
-                        <p>Exchange</p>
-                    </div>
-                    <div>
-                        <button class="dropdown-item" onclick="irParaOutraPagina()" ><img class="img-button send" src="../../assets/sendButton.png" alt="button"></button>
-                        <p>Send</p>
-                    </div>
-                    <div>
-                        <button class="dropdown-item"><img class="img-button" src="../../assets/receiveButton.png" alt="button"></button>
-                        <p>Receive</p>
+    <footer class="menu-footer">
+        <div class="button-container up">
+            <button class="button-footer"><img class="iconMenu" src="../../assets/homeGreen.png" alt="Home"></button>
+            <button onclick="irParaGlobal()" class="button-footer"><img class="iconMenu" src="../../assets/world.png" alt="Discover"></button>
+        </div>
+        <div class="dropdown">
+                <img src="../../assets/logoCircle.png" class="dropdown-toggle" id="dropdownMenuButton" data-alt-src="../../assets/logoCircleClose.png">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="menu-button">
+                        <div>
+                            <button class="dropdown-item"><img class="img-button" src="../../assets/buyButton.png" alt="button"></button>
+                            <p>Buy</p>
+                        </div>
+                        <div>
+                            <button class="dropdown-item"><img class="img-button" src="../../assets/sellButton.png" alt="button"></button>
+                            <p>Sell</p>
+                        </div>
+                        <div>
+                            <button class="dropdown-item"><img class="img-button" src="../../assets/exchangeButton.png" alt="button"></button>
+                            <p>Exchange</p>
+                        </div>
+                        <div>
+                            <button class="dropdown-item" onclick="irParaOutraPagina()" ><img class="img-button send" src="../../assets/sendButton.png" alt="button"></button>
+                            <p>Send</p>
+                        </div>
+                        <div>
+                            <button class="dropdown-item"><img class="img-button" src="../../assets/receiveButton.png" alt="button"></button>
+                            <p>Receive</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+        </div>
+        <div class="button-container down">
+            <button class="button-footer"><img class="iconMenu" src="../../assets/analysis.png" alt="Analisys"></button>
+            <button class="button-footer"><img class="iconMenu" src="../../assets/profileIcon.png" alt="Profile"></button>
+        </div>
     </footer>
+
 
 </section>
 
@@ -178,6 +184,15 @@
     }
 
     function irParaMoeda() {
+        window.location.href = "../coin/coinETH.html";
+    }
+    function irParaGlobal() {
+        window.location.href = "../discover/discover.html";
+    }
+    function irParaPerfil() {
+        window.location.href = "../coin/coinETH.html";
+    }
+    function irParaAnalises() {
         window.location.href = "../coin/coinETH.html";
     }
 </script>

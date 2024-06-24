@@ -23,11 +23,11 @@ body {
 .arrow {
     width: 30px;
     height: 30px;
-    margin: 20px 30px;
+    margin: 30px 30px 15px 25px;
 }
 
 .verify-step {
-    margin-bottom: 10px;
+    margin: 8px 0 10px 0;
 }
 
 .verify-content {
@@ -38,7 +38,7 @@ body {
 }
 
 .verify-content > h2 {
-    margin-bottom: 5px;
+    margin-bottom: -5px;
 }
 
 .verify-content > pre {
@@ -88,5 +88,5 @@ body {
 }
 
 .verify-button {
-    margin-top: -10px;
+    margin-top: -25px;
 }

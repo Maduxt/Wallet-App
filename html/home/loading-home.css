@@ -70,6 +70,7 @@ body {
 .home-wallet > h1 {
     font-size: 1.625rem;
     font-weight: 700;
+    padding-bottom: 5px;
 }
 
 .home-card {

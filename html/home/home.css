@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    margin: 0;
 }
 
 .header {
@@ -9,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 18px;
-    margin-top: 30px;
+    margin: 40px 0 15px 0;
 }
 
 .bell-button {
@@ -48,6 +49,12 @@ body {
     width: 343px;
     display: flex;
     flex-direction: column;
+}
+
+.portfolio > h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .portfolio > div {
@@ -98,11 +105,21 @@ body {
     margin-left: 35px;
 }
 
+.iconMenu {
+    width: 24px;
+    height: 24px;
+
+}
+
+.button-footer {
+    background: none;
+}
+
 .dropdown {
     height: 70px;
     width: 372px;
-    margin-top: -35px;
-    background-color: #12141A;
+    bottom: 5px;
+    /* right: -px; */
     border-radius: 0 0px 18px 18px;
     position: relative;
     display: inline-block;
@@ -113,6 +130,7 @@ body {
     width: 340px;
     border-radius: 18px;
     margin-top: -130px;
+    left: -153px;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -161,4 +179,45 @@ body {
 
 .img-button.send {
     cursor: pointer;
+}
+
+.button-footer {
+    background: none;
+    border: none;
+}
+
+.iconMenu {
+    width: 63.75px;
+    height: 40px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: #12141A;
+    border-radius: 0 0 18px 18px;
+    width: 375px;
+    height: 70px;
+    position: relative;
+    bottom: 24px;
+}
+
+.button-container.up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.button-container.down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
