@@ -30,6 +30,12 @@ hr {
     align-items: center;
 }
 
+.button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .header {
     background: #12141A;
     width: 375px;

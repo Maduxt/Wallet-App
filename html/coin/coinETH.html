@@ -11,7 +11,9 @@
 <body>
     <section class="container">
         <header class="header">
-            <img src="../../assets/arrowLeft.png" alt="<">
+            <button onclick="irParaPaginaAnterior()" class="button-arrow">
+                <img src="../../../assets/arrowLeft.png" alt="<">
+            </button>
             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
         </header>
         <div class="logo-title">
@@ -95,6 +97,10 @@
     <script>
         function irParaOutraPagina() {
           window.location.href = './sell/sell.html';
+        }
+
+        function irParaPaginaAnterior() {
+          window.location.href = '../home/home.html';
         }
     </script>
 
