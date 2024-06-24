@@ -3,18 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./coinETH.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Ethereum</title>
 </head>
 <body>
-    <section>
-        <header>
+    <section class="container">
+        <header class="header">
             <img src="../../assets/arrowLeft.png" alt="<">
-            <img src="../../assets/ETH.png" alt="ETH">
-            <img src="" alt="Dots">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
         </header>
-        <section>
+        <div class="logo-title">
+            <img class="ETH" src="../../assets/ETH.png" alt="ETH">
             <h2>Ethereum</h2>
+        </div>
+        <section class="convert">
+                <h2>1 ETH</h2>
+                <img src="../../assets/convert.png" alt="">
+                <p>$429,50</p>
         </section>
+        <section class="graphic-content">
+            <div class="info">
+                <div class="coin">
+                    <h2>ETH</h2>
+                    <p class="percentage">+20%</p>
+                </div>
+                <div class="data">
+                    <p>Last 5 Months</p>
+                    <img class="arrowDown" src="../../assets/arrowDown.png" alt="down">
+                </div>
+            </div>
+            <img src="../../assets/Graph.png" alt="graphic">
+        </section>
+        <div class="title-portfolio">
+            <h2>Trading history</h2>
+            <button onclick="irParaOutraPagina()" class="btn-portfolio"><img src="../../assets/Tabs.png" alt="buy - sell"></button>
+        </div>
+        <section class="portfolio">
+                <div>
+                    <div onclick="irParaOutraPagina()" class="portfolio-list">
+                        <img class="img-interprise" src="../../assets/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">10 Jan 2023</p>
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$340,50</p>
+                            <p class="cripto-decrease">0.20 ETH</p>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">02 Jan 2023</p> 
+                            <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$740,50</p>
+                            <p class="cripto-decrease">0.40 ETH</p>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">24 Dec 2022</p> 
+                            <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$180,20</p>
+                            <p class="cripto-decrease">0.10 ETH</p>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+
+                <button class="button-logo">
+                    <img src="../../assets/logoCircle.png" alt="Logo">
+                </button>
     </section>
+
+    <script>
+        function irParaOutraPagina() {
+          window.location.href = './sell/sell.html';
+        }
+    </script>
+
 </body>
 </html>
