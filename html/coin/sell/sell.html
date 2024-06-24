@@ -11,7 +11,9 @@
 <body>
     <section class="container">
         <header class="header">
-            <img src="../../../assets/arrowLeft.png" alt="<">
+            <button onclick="irParaPaginaAnterior()" class="button-arrow">
+                <img src="../../../assets/arrowLeft.png" alt="<">
+            </button>
             <div class="logo-title">
                 <img class="ETH" src="../../../assets/ETH.png" alt="ETH">
                 <h2>Ethereum</h2>
@@ -50,7 +52,7 @@
         </div>
         <section class="portfolio">
             <div>
-                    <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <div class="portfolio-list">
                         <img class="img-interprise" src="../../../assets/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -64,7 +66,7 @@
                     </div>
             </div>
     <hr>
-                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                <div class="portfolio-list">
                     <img class="img-interprise" src="../../../assets/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -79,7 +81,7 @@
                     </div>
                 </div>
     <hr>
-                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                <div class="portfolio-list">
                     <img class="img-interprise" src="../../../assets/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -137,8 +139,13 @@
         });
 
         function irParaOutraPagina() {
-          window.location.href = './sell/sell.html';
+          window.location.href = './coinETH.html';
         }
+
+        function irParaPaginaAnterior() {
+          window.location.href = '../coinETH.html';
+        }
+        
     </script>
 </body>
 </html>

@@ -44,6 +44,11 @@ hr {
     padding: 40px 35px 0px 25px;
 }
 
+.button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 .logo-title {
     height: 99px;
