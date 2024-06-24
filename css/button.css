@@ -1,6 +1,6 @@
 .btn {
     display: block;
-    width: 80%;
+    width: 311px;
     max-width: 300px;
     padding: 8px;
     margin: 10px auto;
@@ -10,6 +10,7 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--white);
+    font-weight: 700;
 }
 
 .btn.grey {
