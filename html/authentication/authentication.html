@@ -6,17 +6,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/button.css">
-    <link rel="stylesheet" href="./authentication.css">
+    <link rel="stylesheet" href="../../css/authentication.css">
     <title>Two-Factor Authentication</title>
 </head>
 <body>
     <section class="authentication-container">
-        <img class="arrow" src="../../assets/arrow.png" alt="">
-        <div class="authentication-content">
+        <header class="header">
+            <img class="arrow" src="../../assets/arrow.png" alt="">
+        </header>
+        <section class="authentication-content">
             <img class="authentication-step" src="../../assets/Steps2.png" alt="Step2">
-            <h2>Two-Factor Authentication</h2>
-            <pre>Enter your phone number so that we can text
-                you a verification number.</pre>
+            <div class="description">
+                <h2>Two-Factor Authentication</h2>
+                <p>
+                Enter your phone number so that we can text
+                you a verification number.
+                </p>
+            </div>
             <form class="authentication-form" action="">
                 <label class="authentication-label" for="phone">Phone</label>
                 <div class="authentication-inputs">
@@ -24,7 +30,7 @@
                     <input class="authentication-input" type="number" name="number" id="number" placeholder="00 00000-0000">
                 </div>
             </form>
-        </div>
+        </section>
         <div class="authentication-button">
             <button type="submit" class="btn green" onclick="irParaOutraPagina()">Next</button>
         </div>

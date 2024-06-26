@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="./discover.css">
+    <link rel="stylesheet" href="../home/home.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Discover</title>
 </head>
@@ -14,18 +16,153 @@
             <h2>Discover</h2>
             <i class="fa fa-plus" aria-hidden="true"></i>
         </header>
-        <section class="post-nft">
-            <div class="description">
-                <img src="../../assets/janeProfile.png" alt="Profile Pic">
-                <h3>Mrs HODL</h3>
-                <p>NFT | 9 min ago</p>
-            </div>
-            <div class="likes">
-                <p> <i class="fa fa-plus-circle" aria-hidden="true"></i> 178</p>
-                <p> <i class="fa fa-minus-circle" aria-hidden="true"></i> 21</p>
-                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            </div>
+        <section class="posts">
+            <section class="post-nft">
+                <div class="description-container">
+                    <img class="profile" src="../../assets/janeProfile.png" alt="Profile Pic">
+                    <div class="description">
+                        <h3>Mrs HODL</h3>
+                        <p>NFT | 9 min ago</p>
+                    </div>
+                    <div class="likes">
+                        <p class="num"> <i class="fa fa-plus-circle circle" aria-hidden="true"></i> 178</p>
+                        <p class="num"> <i class="fa fa-minus-circle circle" aria-hidden="true"></i> 21</p>
+                        <i class="fa fa-ellipsis-v circle num" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <p>
+                    Hey peeps, I’ve just became a proud owner of this NFT piece from <span class="green"> @OMK_Unsplash</span>
+                </p>
+                <img src="../../assets/NFT.png" alt="NFT Image">
+            </section>
+            <section class="post-purchase">
+                <div class="purchase-container">
+                    <img class="profile" src="../../assets/FomoProfile.png" alt="Profile Pic">
+                    <div class="description">
+                        <h3>FoMo_Ludens</h3>
+                        <p> Transaction | 9 min ago</p>
+                    </div>
+                    <div class="likes">
+                        <p class="num"> <i class="fa fa-plus-circle circle" aria-hidden="true"></i> 346</p>
+                        <p class="num"> <i class="fa fa-minus-circle circle" aria-hidden="true"></i> 29</p>
+                        <i class="fa fa-ellipsis-v circle num" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <p>
+                    I’ve just made a purchase of @Ethereum
+                </p>
+                <div class="transaction">
+                    <img class="eth" src="../../assets/ETH.png" alt="ETH">
+                        <div class="content">
+                            <div class="convertion">
+                                <p>ETH</p>
+                                <img class="img-convert" src="../../assets/convertGrey.png" alt="Convert">
+                                <p>USD 346.80</p>
+                            </div>
+                            <p>0.21 ETH</p>
+                        </div>
+                        <img class="info" src="../../assets/info.png" alt="i">
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="news-container">
+                    <img class="profile" src="../../assets/logoCircle.png" alt="Profile Pic">
+                    <div class="description">
+                        <h3>crypto</h3>
+                        <p>News | 24 min ago</p>
+                    </div>
+                    <div class="likes">
+                        <p class="num"> <i class="fa fa-plus-circle" aria-hidden="true"></i> 592</p>
+                        <p class="num"> <i class="fa fa-minus-circle" aria-hidden="true"></i> 84</p>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="report">
+                    <img src="../../assets/news.png" alt="News">
+                    <div class="description-news">
+                        <h3>Could quantum computer beat</h3>
+                        <p>Computers could one day crack Ethereum encryption.</p>
+                    </div>
+                </div>
+            </section>
         </section>
+       
+        <footer class="menu-footer">
+            <div class="button-container up">
+                <button onclick="irParaHome()" class="button-footer"><img class="iconMenu" src="../../assets/home.png" alt="Home"></button>
+                <button onclick="irParaGlobal()" class="button-footer"><img class="iconMenu" src="../../assets/worldGreen.png" alt="Discover"></button>
+            </div>
+            <div class="dropdown">
+                    <img src="../../assets/logoCircle.png" class="dropdown-toggle" id="dropdownMenuButton" data-alt-src="../../assets/logoCircleClose.png">
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="menu-button">
+                            <div>
+                                <button class="dropdown-item"><img class="img-button" src="../../assets/buyButton.png" alt="button"></button>
+                                <p>Buy</p>
+                            </div>
+                            <div>
+                                <button class="dropdown-item"><img class="img-button" src="../../assets/sellButton.png" alt="button"></button>
+                                <p>Sell</p>
+                            </div>
+                            <div>
+                                <button class="dropdown-item"><img class="img-button" src="../../assets/exchangeButton.png" alt="button"></button>
+                                <p>Exchange</p>
+                            </div>
+                            <div>
+                                <button class="dropdown-item" onclick="irParaOutraPagina()" ><img class="img-button send" src="../../assets/sendButton.png" alt="button"></button>
+                                <p>Send</p>
+                            </div>
+                            <div>
+                                <button class="dropdown-item"><img class="img-button" src="../../assets/receiveButton.png" alt="button"></button>
+                                <p>Receive</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="button-container down">
+                <button onclick="irParaAnalysis()" class="button-footer"><img class="iconMenu" src="../../assets/analysis.png" alt="Analisys"></button>
+                <button onclick="irParaProfile()" class="button-footer"><img class="iconMenu" src="../../assets/profileIcon.png" alt="Profile"></button>
+            </div>
+        </footer>
     </section>
+
+    <script>
+
+    function irParaHome() {
+      window.location.href = '../home/home.html';
+    }
+
+    function irParaNotificacoes() {
+        window.location.href = '../notifications/notifications.html';
+    }
+
+    function irParaAnalysis() {
+        window.location.href = '../analysis/analysis.html';
+    }
+    function irParaGlobal() {
+        window.location.href = "../discover/discover.html";
+    }
+    function irParaProfile() {
+        window.location.href = "../discover/discover.html";
+    }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dropdownToggle = document.getElementById('dropdownMenuButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+        
+            dropdownToggle.addEventListener('click', () => {
+                // Alterna a exibição do menu suspenso
+                dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        
+                // Troca a imagem
+                const currentSrc = dropdownToggle.getAttribute('src');
+                const altSrc = dropdownToggle.getAttribute('data-alt-src');
+                dropdownToggle.setAttribute('src', altSrc);
+                dropdownToggle.setAttribute('data-alt-src', currentSrc);
+            });
+        });
+    </script>
+
 </body>
 </html>
