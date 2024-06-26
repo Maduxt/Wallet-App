@@ -1,0 +1,363 @@
+* {
+    color: var(--white);
+    font-family: var(--titillium);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: var(--background-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(90deg, rgba(23,42,45,1) 20%, rgba(24,33,39,1) 35%, rgba(25,28,36,1) 100%);
+    height: 812px;
+    width: 375px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    width: 375px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 18px 8px 16px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+.posts {
+    height: 700px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.fa-plus {
+    width: 24px;
+    height: 24px;
+} 
+
+.post-nft {
+    width: 343px;
+    height: 314px;
+    background: #12141A;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-nft > p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 16px;
+}
+
+.green {
+    color: #04C88F;
+    font-weight: 700;
+
+}
+
+.description-container {
+    width: 311px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 122px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.likes {
+    height: 22px;
+    width: 137px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.num {
+    padding: 4px 8px 4px 8px;
+    border-radius: 99px;
+    background: #F1AD3933;
+    font-size: 12px;
+    color: #F1AD39;
+}
+
+.circle {
+    color: #F1AD39;
+}
+
+.fa-ellipsis-v {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+}
+
+.description > h3 {
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.description > p {
+    font-size: .625rem;
+    font-weight: 700;
+    color: #C2CCC999;
+}
+
+.post-purchase {
+    height: 184px;
+    background: #12141A;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.purchase-container {
+    width: 311px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.post-purchase > p {
+    text-align: start;
+}
+
+.transaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 311px;
+    height: 70px;
+    border: 1px solid #686E7B33;
+    border-radius: 16px;
+}
+
+.eth {
+    width: 38px;
+    height: 38px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 38px;
+    width: 185px;
+}
+
+.convertion {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: .75rem;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+.convertion > p {
+    color: #F0F5F399;
+}
+
+.content > p {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.info {
+    padding-right: 5px;
+}
+
+.img-convert {
+    width: 14px;
+    height: 14px;
+}
+
+.news {
+    height: 142px;
+    background: #12141A;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news-container {
+    width: 311px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.report {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 311px;
+    height: 58px;
+}
+
+.description-news {
+    width: 237px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.description-news > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.description-news > p {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.dropdown {
+    height: 343px;
+    width: 142px;
+    bottom: -130px;
+    border-radius: 0 0px 18px 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 340px;
+    border-radius: 18px;
+    margin-top: -130px;
+    left: -153px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border-radius: 16px;
+}
+
+.dropdown-item {
+    margin-bottom: -15px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    border: none;
+    justify-content: space-between;
+    background: none;
+}
+
+.menu-button {
+    display: flex;
+    width: 343px;
+    height: 88px;
+    justify-content: space-around;
+    margin: -40px 0 0 15px;
+    background: #12141A;
+    border-radius: 16px;
+}
+
+.menu-button > div {
+    border-radius: 16px;
+    font-size: .625rem;
+    font-weight: 700;
+    display: flex;
+    width: 47.8px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-button {
+    width: 40px;
+    height: 40px;
+}
+
+.img-button.send {
+    cursor: pointer;
+}
+
+.button-footer {
+    background: none;
+    border: none;
+}
+
+.iconMenu {
+    width: 63.75px;
+    height: 40px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: #12141A;
+    border-radius: 0 0 18px 18px;
+    width: 375px;
+    height: 70px;
+    position: relative;
+    bottom: 15px;
+}
+
+.button-container.up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.button-container.down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

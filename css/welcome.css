@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: var(--titillium);
+    font-weight: 700;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-solid);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome-container {
+    text-align: center;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wallet-icon {
+    width: 220px;
+    height: 220px;
+    margin: 80px 0 30px 0;
+}
+
+.content > h1 {
+    font-size: 24px;
+    margin-bottom: -20px;
+}
+
+.content > p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button-container {
+    margin-top: 160px;
+}
