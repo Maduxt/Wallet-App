@@ -1,0 +1,13 @@
+:root {
+    --background-gradient: linear-gradient(90deg, rgba(23,42,45,1) 20%, rgba(24,39,43,1) 35%, rgba(25,28,36,1) 100%);
+    --background-solid: #191C24;
+    --lightgreen: #04C88F;
+    --buttongrey: #454B5866;
+    --white: #FFFFFF;
+    --white60: #FFFFFF99;
+    --border-color: #454B5866;
+
+
+    --titillium: "Titillium Web", sans-serif;
+    --popins: "Poppins", sans-serif;
+}
