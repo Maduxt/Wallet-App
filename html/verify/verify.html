@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/button.css">
-    <link rel="stylesheet" href="../../css/verify.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/button.css">
+    <link rel="stylesheet" href="../../assets/css/verify.css">
+    <link rel="stylesheet" href="../sucess/sucess.html">
     <title>Verify your Identity</title>
 </head>
 <body>
-    <section class="verify-container">
-        <header class="header">
-            <img class="arrow" src="../../assets/arrow.png" alt="arrow">
-        </header>
-        <div class="verify-content">
-            <img class="verify-step" src="../../assets/Steps3.png" alt="Step3">
-            <div class="description">
-                <h2>Verify your Identity</h2>
-                <p>
-                    We would need some of your personal info in
-                    order to protect you from fraud and theft but
-                    also to stay compliant with the regulations.
-                </p>
-            </div>
-            <form class="verify-form" action="">
-                <label class="verify-label" for="date-of-birth">Date of Birth</label>
-                <input class="verify-input" type="date" name="date" id="date" required>
-
-                <label class="verify-label" for="personal-id-number">Personal Id Number</label>
-                <input class="verify-input" type="number" name="id-number" id="id-number" required>
-
-                <label class="verify-label" for="residential-address">Residential Adress</label>
-                <input class="verify-input" type="text" name="adress" id="adress" required>
-
-                <label class="verify-label" for="zip-country">ZIP/Country</label>
-                <div>
-                    <input class="verify-input__sm" type="number" name="zip" id="zip" required>
-                    <input class="verify-input__lg" type="text" name="country" id="country" required>
+    <main class="verify-container">
+        <div>
+            <header class="header">
+                <img class="arrow" src="../../assets/img/arrow.png" alt="arrow">
+            </header>
+            <div class="verify-content">
+                <img class="verify-step" src="../../assets/img/Steps3.png" alt="Step3">
+                <div class="description">
+                    <h2>Verify your Identity</h2>
+                    <p>
+                        We would need some of your personal info in
+                        order to protect you from fraud and theft but
+                        also to stay compliant with the regulations.
+                    </p>
                 </div>
-            </form>
+                <form class="verify-form" action="">
+                    <div class="input">
+                        <label class="verify-label" for="date-of-birth">Date of Birth</label>
+                        <input class="verify-input" type="date" name="date" id="date" required>
+                    </div>
+                    <div class="input">
+                        <label class="verify-label" for="personal-id-number">Personal Id Number</label>
+                        <input class="verify-input no-spin" type="number" name="id-number" id="id-number" required placeholder="1234567890">
+                    </div>
+                    <div class="input">
+                        <label class="verify-label" for="residential-address">Residential Adress</label>
+                        <input class="verify-input" type="text" name="adress" id="adress" required placeholder="Bulevar dr Zorana Djindjica 125/4"> 
+                    </div>
+                    <div class="input">
+                        <label class="verify-label" for="zip-country">ZIP/Country</label>
+                        <div>
+                            <input class="verify-input__sm" type="number" name="zip" id="zip" required placeholder="18000">
+                            <input class="verify-input__lg" type="text" name="country" id="country" required placeholder="Serbia">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="verify-button">
-            <button class="btn green" type="submit" onclick="irParaOutraPagina()">Confirm Details</button>
+            <button class="btn green" type="submit" onclick="navigateTo('../sucess/sucess.html')">Confirm Details</button>
         </div>
-    </section>
+    </main>
 
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../sucess/sucess.html';
-        }
-    </script>
+    <script src="../../assets/javascript/pages.js"></script>
 
 </body>
 </html>

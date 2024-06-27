@@ -8,6 +8,8 @@
     text-decoration: none;
     color: var(--white);
     font-weight: 700;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 .btn.grey {

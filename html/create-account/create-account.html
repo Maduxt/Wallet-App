@@ -8,38 +8,47 @@
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="../../assets/css/button.css">
     <link rel="stylesheet" href="../../assets/css/create-account.css">
+    <link rel="stylesheet" href="../authentication/authentication.html">
     <title>Create Account</title>
 </head>
-<body class="body_create_account">
-      <header class="header">
-        <img class="close-icon" src="../../assets/img/closeIcon.png" alt="">
-      </header>
-        <div class="create-account__content">
-            <img class="steps" src="../../assets/img/Steps.png" alt="Steps">
-            <h2>Create an Account</h2>
-            <form class="create-account_form">
-                <label class="create-account__label" for="name">Name</label>
-                <input class="create-account__input" type="text" name="name" id="name" placeholder="Name here" required>
-
-                <label class="create-account__label" for="surname">Surname</label>
-                <input class="create-account__input" type="text" name="surname" id="surname" placeholder="Surname here">
-
-                <label class="create-account__label" for="email">Email</label>
-                <input class="create-account__input" type="text" name="email" id="email" placeholder="Email here">
-
-                <label class="create-account__label" for="password">Password</label>
-                <input class="create-account__input" type="password" name="password" id="password" placeholder="Password here">
-                <!-- <i class="fa fa-eye" id="toggle-password"></i> -->
-            </form>
-            <button type="submit" class="btn green" onclick="irParaOutraPagina()">Create Account</button>
-        </div>
+<body>
+    <main class="display-grid">
+      <div>
+        <header class="header">
+          <img class="close-icon" src="../../assets/img/closeIcon.png" alt="">
+        </header>
+        <section class="create-account__content">
+          <img class="steps" src="../../assets/img/Steps.png" alt="Steps">
+          <h2>Create an Account</h2>
+          <form class="create-account_form">
+            <div class="label">
+              <label class="create-account__label" for="name">Name</label>
+              <input class="create-account__input" type="text" name="name" id="name" placeholder="Name here" required>
+            </div>
+            <div class="label">
+              <label class="create-account__label" for="surname">Surname</label>
+              <input class="create-account__input" type="text" name="surname" id="surname" placeholder="Surname here">
+            </div>
+            <div class="label">
+              <label class="create-account__label" for="email">Email</label>
+              <input class="create-account__input" type="text" name="email" id="email" placeholder="Email here">
+            </div>
+            <div class="label">
+              <label class="create-account__label" for="password">Password</label>
+              <input class="create-account__input" type="password" name="password" id="password" placeholder="Password here">
+            </div>
+            <!-- <i class="fa fa-eye" id="toggle-password"></i> -->
+          </form>
+        </section>
+      </div>
+          <div class="create-account__button">
+            <button type="submit" class="btn green" onclick="navigateTo('../authentication/authentication.html')">Create Account</button>
+          </div>
+    </main>
 
     
 
-        <script>
-
-
-        </script>
+        <script src="../../assets/javascript/pages.js"></script>
 </body>
 
 
