@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/button.css">
-    <link rel="stylesheet" href="../../css/create-account.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/button.css">
+    <link rel="stylesheet" href="../../assets/css/create-account.css">
     <title>Create Account</title>
 </head>
-<body>
-    <section class="create-account__container">
+<body class="body_create_account">
       <header class="header">
-        <img class="close-icon" src="../../assets/closeIcon.png" alt="">
+        <img class="close-icon" src="../../assets/img/closeIcon.png" alt="">
       </header>
         <div class="create-account__content">
-            <img class="steps" src="../../assets/Steps.png" alt="Steps">
+            <img class="steps" src="../../assets/img/Steps.png" alt="Steps">
             <h2>Create an Account</h2>
             <form class="create-account_form">
                 <label class="create-account__label" for="name">Name</label>
@@ -30,33 +29,18 @@
 
                 <label class="create-account__label" for="password">Password</label>
                 <input class="create-account__input" type="password" name="password" id="password" placeholder="Password here">
-                <i class="fa fa-eye" id="toggle-password"></i>
+                <!-- <i class="fa fa-eye" id="toggle-password"></i> -->
             </form>
             <button type="submit" class="btn green" onclick="irParaOutraPagina()">Create Account</button>
         </div>
-    </section>
 
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../authentication/authentication.html';
-        }
-    </script>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $("#toggle-password").click(function() {
-          let input = $("#password");
-          let icon = $(this);
-          if (input.attr("type") === "password") {
-            input.attr("type", "text");
-            icon.removeClass("fa-eye").addClass("fa-eye-slash");
-          } else {
-            input.attr("type", "password");
-            icon.removeClass("fa-eye-slash").addClass("fa-eye");
-          }
-        });
-    });
-    </script>
+    
+
+        <script>
+
+
+        </script>
 </body>
+
+
 </html>

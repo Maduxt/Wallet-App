@@ -1,11 +1,5 @@
-* {
-    box-sizing: border-box;
-    font-family: var(--titillium);
-    font-weight: 700;
-    margin: 0;
-}
 
-body {
+.body_create_account {
     background-color: var(--background-solid);
     color: var(--white);
     display: flex;

@@ -11,34 +11,37 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.authentication-container {
+.display-grid {
+    padding-bottom: 24px; 
+    padding-top: 32px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    width: 310px;
+    gap: 32px;
+    flex-direction: column;
     height: 812px;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 .header {
     width: 375px;
+    max-width: 100%;
     height: 56px;
-    margin-top: 30px;
 }
 
 .arrow {
     width: 30px;
     height: 30px;
-    margin-left: -10px;
+    margin-left: 32px;
 }
 
 .authentication-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    
 }
 
 .description {
@@ -49,18 +52,18 @@ body {
     justify-content: space-around;
     height: 90px;
     width: 311px;
-    margin: 30px 0 20px 0;
-}
-
-.authentication-content > pre {
-    margin-bottom: 30px;
+    margin: 32px 0px;
 }
 
 .authentication-label {
     font-size: .75rem;
     font-weight: 400;
     color: var(--white60);
-    padding-bottom: 8px;
+}
+
+.authentication-inputs {
+    display: flex;
+    gap: 8px;
 }
 
 .authentication-input {
@@ -69,8 +72,8 @@ body {
     width: 221px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    margin-bottom: 6%;
-    padding-left: 10px;
+    padding-left: 16px;
+    
 }
 
 .authentication-input__sm {
@@ -78,9 +81,12 @@ body {
     width: 82px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding-left: 10px;
+    padding-left: 16px;
+   
 }
 
 .authentication-button {
-    margin-top: 290px;
+    display: flex;
+    justify-content: center;
+    
 }

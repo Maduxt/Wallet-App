@@ -12,23 +12,15 @@ body {
     height: 100vh;
 }
 
-.verify-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 310px;
-    /* height: 812px; */
-}
-/* 
 .header {
     width: 310px;
     height: 56px;
-} */
+}
 
 .arrow {
     width: 30px;
     height: 30px;
-    margin-left: -10px;
+    margin-left: 60px;
 }
 
 .verify-step {

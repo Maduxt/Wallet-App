@@ -11,15 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.create-account__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 310px;
+    min-height: 100vh;
 }
 
 .header {
@@ -81,8 +73,8 @@ body {
     font-size: 1rem;
 }
 
-#toggle-password {
+/* #toggle-password {
     position: relative;
     top: -50px;
     right: -278px;
-}
+} */
