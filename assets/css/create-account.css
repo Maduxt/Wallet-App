@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    height: 98vh;
 }
 
 .display-grid {
@@ -23,6 +23,7 @@ body {
     height: 812px;
     max-height: 100vh;
     max-width: 100vw;
+    align-items: center;
 }
 
 .header {

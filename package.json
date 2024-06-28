@@ -1,5 +1,28 @@
 {
+  "name": "wallet-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "bootstrap": "^3.4.1"
-  }
+    "bootstrap": "^3.4.1",
+    "chart.js": "^4.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/**/*.{js,css,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maduxt/Wallet-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maduxt/Wallet-App/issues"
+  },
+  "homepage": "https://github.com/Maduxt/Wallet-App#readme"
 }

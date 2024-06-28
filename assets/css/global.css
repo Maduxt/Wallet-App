@@ -13,3 +13,13 @@
     --titillium: "Titillium Web", sans-serif;
     --popins: "Poppins", sans-serif;
 }
+
+::-webkit-scrollbar {
+    background-color: #1e1e1e00;
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #46464600;
+    border-radius: 0px;
+  }

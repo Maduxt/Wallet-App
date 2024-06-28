@@ -1,91 +1,88 @@
 * {
-    color: var(--white);
-    font-family: var(--titillium);
-    background-color: var(--background-solid);
-    box-sizing: border-box;
-    margin: 0;
+  color: var(--white);
+  font-family: var(--titillium);
+  background-color: var(--background-solid);
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
 }
 
 .display-grid {
-    padding-bottom: 24px; 
-    padding-top: 32px;
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    flex-direction: column;
-    height: 812px;
-    max-height: 100vh;
-    max-width: 100vw;
+  padding-bottom: 24px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 812px;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 .header {
-    width: 375px;
-    max-width: 100%;
-    height: 56px;
+  width: 375px;
+  max-width: 100%;
+  height: 56px;
 }
 
 .arrow {
-    width: 30px;
-    height: 30px;
-    margin-left: 32px;
+  width: 30px;
+  height: 30px;
+  margin-left: 32px;
 }
 
 .authentication-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    height: 90px;
-    width: 311px;
-    margin: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 90px;
+  width: 311px;
+  margin: 32px 0px;
 }
 
 .authentication-label {
-    font-size: .75rem;
-    font-weight: 400;
-    color: var(--white60);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--white60);
 }
 
 .authentication-inputs {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .authentication-input {
-    font-size: .875rem;
-    height: 50px;
-    width: 221px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
-    
+  font-size: 0.875rem;
+  height: 50px;
+  width: 221px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding-left: 16px;
 }
 
 .authentication-input__sm {
-    height: 50px;
-    width: 82px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
-   
+  height: 50px;
+  width: 82px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding-left: 16px;
 }
 
 .authentication-button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
