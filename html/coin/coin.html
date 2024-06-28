@@ -10,41 +10,45 @@
 <body>
 
     <main class="display-grid">
+
         <header class="headeer">
             <button onclick="irParaPaginaAnterior()" class="button-arrow">
-                <img src="../../../assets/img/arrowLeft.png" alt="<">
+                <img src="../../../assets/img/arrow.png" alt="<">
             </button>
+            <div id="logo">
+                <img class="ETH" src="../../assets/img/ETH.png" alt="ETH">
+                <h2 class="caption">Ethereum</h2>
+            </div>
             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
         </header>
-        <div class="logo-title">
-            <img class="ETH" src="../../assets/img/ETH.png" alt="ETH">
-            <h2>Ethereum</h2>
-        </div>
+
         <section class="convert">
-                <h2>1 ETH</h2>
+                <p>1 ETH</p>
                 <img src="../../assets/img/convert.png" alt="">
                 <p>$429,50</p>
         </section>
 
         <section class="graphic-container">
-            <div class="info">
-                <h2>ETH</h2>
-                <div class="select-container">
-                    <select id="monthRange">
-                        <option value="5">Últimos 5 meses</option>
-                        <option value="10">Últimos 10 meses</option>
-                        <option value="15">Últimos 15 meses</option>
-                    </select>
-                </div>
                 <div class="chart-container">
-                    <div class="percentage-display percentage" id="percentageDisplay">0%</div>
+                    <div class="chart-title__percentage">
+                        <h3 class="chart-title">ETH</h3>
+                        <div class="percentage-display percentage" id="percentageDisplay">0%</div>
+                    </div>
+                    <div class="select-container">
+                        <select id="monthRange">
+                            <option class="option" value="5">Last 5 Months</option>
+                            <option class="option" value="10">Last 10 Months</option>
+                            <option class="option" value="15">Last 15 Months</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="chart">
                     <canvas id="tradingChart"></canvas>
                 </div>
-            </div>
         </section>
 
-        <div class="title-portfolio">
-            <h2>Trading history</h2>
+        <div class="title-container">
+            <h2 class="portfolio-title">Trading history</h2>
             <div class="button-container">
                 <button id="buyButton" class="active">Buy</button>
                 <button id="sellButton">Sell</button>
@@ -52,15 +56,14 @@
         </div>
         <section class="portfolio" id="buyHistory">
             <div>
-                    <div onclick="irParaOutraPagina()" class="portfolio-list">
-                        <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
-                        <div class="portfolio-content">
-                            <div>
-                                <h3 class="eth-btc">ETH</h3>
-                                <p class="value-eth">10 Jan 2023</p>
-                            </div>
-                            <div class="values">
-                                <p class="eth-btc">$340,50</p>
+                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>                                <p class="value-eth">10 Jan 2023</p>
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$340,50</p>
                             <p class="cripto-decrease">0.20 ETH</p>
                         </div>
                     </div>
@@ -90,6 +93,48 @@
                         <div class="values">
                             <p class="eth-btc">$180,20</p>
                             <p class="cripto-decrease">0.10 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">24 Dec 2022</p>
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$180,20</p>
+                            <p class="cripto-decrease">0.10 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">02 Jan 2023</p>
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$740,50</p>
+                            <p class="cripto-decrease">0.40 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div onclick="irParaOutraPagina()" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">02 Jan 2023</p>
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$740,50</p>
+                            <p class="cripto-decrease">0.40 ETH</p>
                         </div>
                     </div>
                 </div>
@@ -141,30 +186,62 @@
                         </div>
                     </div>
                 <hr>
+                <div class="portfolio-list">
+                    <img class="img-interprise" src="../../../assets/img/ETH.png" alt="ETH">
+                    <div class="portfolio-content">
+                        <div>
+                            <h3 class="eth-btc">ETH</h3>
+                            <p class="value-eth">02 Jan 2023</p> 
+                            <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                        </div>
+                        <div class="values">
+                            <p class="eth-btc">$740,50</p>
+                            <p class="cripto-decrease">0.40 ETH</p>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+            <div class="portfolio-list">
+                <img class="img-interprise" src="../../../assets/img/ETH.png" alt="ETH">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">ETH</h3>
+                        <p class="value-eth">02 Jan 2023</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$740,50</p>
+                        <p class="cripto-decrease">0.40 ETH</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </section>
-            <!-- id="sellHistory" class="hidden" -->
+        
             <div class="menu">
                 <button class="dropdown-button" id="dropdownButton"><img src="../../assets/img/logoCircle.png" alt=""></button>
+                <div>
                 <div class="dropdown-menu" id="dropdownMenu">
-                    <div class="options">
-                        <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/buyButton.png" alt=""></a>
-                        <p>Buy</p>
-                    </div>
-                    <div class="options">
-                        <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/sellButton.png" alt=""></a>
-                        <p>Sell</p>
-                    </div>
-                    <div class="options">
-                        <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/exchangeButton.png" alt=""></a>
-                        <p>Exchange</p>
-                    </div>
-                    <div class="options">
-                        <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/sendButton.png" alt=""></a>
-                        <p>Send</p>
-                    </div>
-                    <div class="options">
-                        <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/receiveButton.png" alt=""></a>
-                        <p>Receive</p>
+                        <div class="options">
+                            <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/buyButton.png" alt=""></a>
+                            <p>Buy</p>
+                        </div>
+                        <div class="options">
+                            <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/sellButton.png" alt=""></a>
+                            <p>Sell</p>
+                        </div>
+                        <div class="options">
+                            <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/exchangeButton.png" alt=""></a>
+                            <p>Exchange</p>
+                        </div>
+                        <div class="options">
+                            <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/sendButton.png" alt=""></a>
+                            <p>Send</p>
+                        </div>
+                        <div class="options">
+                            <a class="dropdown-item" href="../../html/send-coin/send-coin.html"><img src="../../assets/img/receiveButton.png" alt=""></a>
+                            <p>Receive</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,6 +267,16 @@
             document.getElementById('buyButton').classList.remove('active');
         });
     </script>
+        <script>
+            window.addEventListener('scroll', () => {
+                const logo = document.getElementById('logo');
+                if (window.scrollY > 0) {
+                    logo.classList.add('scrolled');
+                } else {
+                    logo.classList.remove('scrolled');
+                }
+            });
+        </script>
 
 
 </body>

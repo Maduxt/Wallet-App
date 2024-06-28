@@ -1,53 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="./notifications.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/img/logo.svg" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/notifications.css" />
     <title>Notifications</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="container">
-        <header class="header">
-            <button onclick="irParaOutraPagina()" class="arrow"><img src="../../assets/arrowLeft.png" alt="<"></button>
-            <h2>Notifications</h2>
-        </header>
-        <section class="content">
-            <div class="notification">
-                <img src="../../assets/profile.png" alt="Picture">
-                <p class="paragraph">Mrs HODL has sent you ETH 0.015. Check 
-                transaction details here. <span>28 mins ago</span></p>
-            </div>
-            <div class="notification important">
-                <img src="../../assets/nftNotification.png" alt="Picture">
-                <p class="paragraph">Your NFT Annihilation is gaining quite some
-                interest. You have a total of 38 bidders. <span>32 min ago</span></p>
-            </div>
-            <div class="notification">
-                <img src="../../assets/janeProfile.png" alt="Picture">
-                <p class="paragraph">Jane-Wiz and 25 others liked your transaction
-                update. <span>45 mins ago</span></p>
-            </div>
-            <div class="notification">
-                <img src="../../assets/janeProfile.png" alt="Picture">
-                <p class="paragraph">Jane-Wiz and 78 others liked your transaction
-                update. <span>49 mins ago</span></p>
-            </div>
-            <div class="notification">
-                <img src="../../assets/profile.png" alt="Picture">
-                <p class="paragraph">Samantha Jones has sent you BTC 0.0008. Check
-                transaction details here. <span>59 mins ago</span></p>
-            </div>
-        </section>
+      <header class="header">
+        <button onclick="navigateTo('../home/home.html')" class="arrow">
+          <img src="../../assets/img/arrowLeft.png" alt="<" />
+        </button>
+        <div class="title-notification">
+          <h2>Notifications</h2>
+        </div>
+      </header>
+      <section class="content">
+        <div class="notification">
+          <img src="../../assets/img/FomoProfile.png" alt="Picture" />
+          <p class="paragraph">
+            Mrs HODL has sent you ETH 0.015. Check transaction details here.
+            <span>28 mins ago</span>
+          </p>
+        </div>
+        <div class="notification">
+          <img src="../../assets/img/nftNotification.png" alt="Picture" />
+          <p class="paragraph">
+            Your NFT Annihilation is gaining quite some interest. You have a
+            total of 38 bidders. <span>32 min ago</span>
+          </p>
+        </div>
+        <div class="notification">
+          <img src="../../assets/img/janeProfile.png" alt="Picture" />
+          <p class="paragraph">
+            Jane-Wiz and 25 others liked your transaction update.
+            <span>45 mins ago</span>
+          </p>
+        </div>
+        <div class="notification">
+          <img src="../../assets/img/janeProfile.png" alt="Picture" />
+          <p class="paragraph">
+            Jane-Wiz and 78 others liked your transaction update.
+            <span>49 mins ago</span>
+          </p>
+        </div>
+        <div class="notification">
+          <img src="../../assets/img/FomoProfile.png" alt="Picture" />
+          <p class="paragraph">
+            Samantha Jones has sent you BTC 0.0008. Check transaction details
+            here. <span>59 mins ago</span>
+          </p>
+        </div>
+      </section>
     </section>
 
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../home/home.html';
-        }
-    </script>
-
-</body>
+    <script src="../../assets/javascript/pages.js"></script>
+  </body>
 </html>
