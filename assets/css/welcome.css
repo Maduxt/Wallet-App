@@ -21,7 +21,7 @@
 .wallet-icon {
     width: 220px;
     height: 220px;
-    margin: 32px 0 30px 0;
+    margin: 24px 0 30px 0;
 }
 
 .title {
@@ -34,7 +34,7 @@
 }
 
 .button-container {
-    margin-top: 50px;
+    margin-top: 74px;
     display: flex;
     flex-direction: column;
     align-items: center;
