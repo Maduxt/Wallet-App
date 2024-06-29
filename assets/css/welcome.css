@@ -21,21 +21,20 @@
 .wallet-icon {
     width: 220px;
     height: 220px;
-    margin: 80px 0 30px 0;
+    margin: 32px 0 30px 0;
 }
 
-.content > h1 {
+.title {
     font-size: 24px;
-    margin-bottom: -20px;
 }
 
-.content > p {
-    font-size: 16px;
+.paragraph {
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .button-container {
-    margin-top: 160px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +44,52 @@
     margin-top: 16px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
+    .wallet-icon {
+        width: 220px;
+        height: 220px;
+        margin: 80px 0 30px 0;
+    }
 
+    .paragraph {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wallet-icon {
+        width: 350px;
+        height: 350px;
+        margin: 50px 0 30px 0;
+    }
+
+    .paragraph {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wallet-icon {
+        width: 350px;
+        height: 350px;
+        margin: 50px 0 30px 0;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .paragraph {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .button-container {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
