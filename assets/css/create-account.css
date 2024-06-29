@@ -93,3 +93,119 @@ body {
     top: -50px;
     right: -278px;
 } */
+
+@media screen and (min-width: 576px) {
+    .header {
+        width: 400px;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .steps {
+        margin: 32px 0;
+        width: 300px;
+    }
+    
+    .create-account__input {
+        font-size: .875rem;
+        height: 50px;
+        width: 350px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        width: 450px;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .steps {
+        margin: 32px 0;
+        width: 330px;
+    }
+    
+    .create-account__input {
+        font-size: .875rem;
+        height: 50px;
+        width: 400px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        width: 550px;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .steps {
+        margin: 32px 0;
+        width: 330px;
+    }
+    
+    .create-account__input {
+        font-size: .875rem;
+        height: 50px;
+        width: 500px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        width: 600px;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .steps {
+        margin: 32px 0;
+        width: 330px;
+    }
+    
+    .create-account__input {
+        font-size: .875rem;
+        height: 50px;
+        width: 550px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        width: 650px;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+    .steps {
+        margin: 32px 0;
+        width: 350px;
+    }
+    
+    .create-account__input {
+        font-size: .875rem;
+        height: 50px;
+        width: 600px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+}

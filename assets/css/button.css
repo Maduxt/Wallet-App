@@ -24,6 +24,12 @@
     filter: brightness(1.1);
 }
 
+@media screen and (min-width: 576px) {
+    .btn {
+        width: 350px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .btn {
         width: 411px;
@@ -34,5 +40,24 @@
 @media screen and (min-width: 992px) {
     .btn {
         width: 511px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .btn {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .btn {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .btn {
+        width: 611px;
+        font-size: 30px;
     }
 }
