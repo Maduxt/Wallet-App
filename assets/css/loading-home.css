@@ -54,12 +54,14 @@ body {
   background: none;
   border: 1px solid var(--white);
   border-radius: 18px;
+  transition: 0.5s;
 }
 
 #toggle-input-image {
   width: 24px;
   height: 24px;
   margin-right: 6px;
+  transition: 0.5s;
 }
 
 .input-search {

@@ -1,4 +1,3 @@
-
 .body_create_account {
     background-color: var(--background-solid);
     color: var(--white);
@@ -39,8 +38,13 @@
     margin-top: 160px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .btn {
     margin-top: 16px;
+}
+
+@media screen and (max-width: 576px) {
+
 }
