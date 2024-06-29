@@ -40,15 +40,39 @@ body {
 }
 
 .search {
-  width: 70px;
+  width: 150px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+}
+
+#search-input {
+  display: none;
+  margin-top: 10px;
+  padding: 5px;
+  width: 200px;
+  background: none;
+  border: 1px solid var(--white);
+  border-radius: 18px;
+}
+
+#toggle-input-image {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.input-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 32px;
 }
 
 .bell-button {
   background: none;
   border: 0;
+  padding-left: 16px;
 }
 
 .home-wallet {
@@ -147,6 +171,7 @@ body {
 .home-trending {
   max-width: 100%;
   width: 375px;
+  margin-top: 24px;
 }
 
 .trending-title {
@@ -242,13 +267,20 @@ body {
   width: 18px;
 }
 
+.portfolio {
+  margin-top: 24px;
+  width: 375px;
+}
+
 .portfolio-title {
   font-size: 1.125rem;
   font-weight: 700;
+  padding-bottom: 8px;
 }
 
 .portfolio-list {
   height: 70px;
+  width: 375px;
   display: flex;
   flex-direction: row;
   align-items: center;
