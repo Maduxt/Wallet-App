@@ -13,8 +13,10 @@
 <body>
     <section class="sucess-container">
         <header class="header">
-            <img class="arrow" src="../../assets/img/arrow.png" alt="arrow">
-            <img src="../../assets/img/Steps4.png" alt="Step 4">
+            <img onclick="navigateTo('../verify/verify.html')" class="arrow" src="../../assets/img/arrow.png" alt="arrow">
+            <div class="div-steps">
+                <img class="steps" src="../../assets/img/Steps4.png" alt="Step 4">
+            </div>
         </header>
         <div class="sucess-content">
             <div class="content">
@@ -28,11 +30,7 @@
         </div>
     </section>
 
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../home/loading-home.html';
-        }
-    </script>
+    <script src="../../assets/javascript/pages.js"></script>
 
 </body>
 </html>

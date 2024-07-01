@@ -27,6 +27,7 @@ body {
 
 .header {
     width: 310px;
+    max-width: 100%;
     height: 56px;
 }
 
@@ -34,10 +35,13 @@ body {
     width: 6px;
     height: 10px;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
-.steps {
-    text-align: center;
+.div-steps {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .sucess-content {
@@ -76,7 +80,6 @@ body {
     border-top-color: #fff;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    /* margin-top: 40px; */
 }
 
 .paragraph {
@@ -86,5 +89,49 @@ body {
 @keyframes spin {
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    .header {
+        width: 400px;
+    }
+
+}
+  
+@media screen and (min-width: 768px) {
+    .header {
+        width: 430px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        width: 500px;
+    }
+
+    .steps {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        width: 550px;
+    }
+
+    .steps {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        width: 600px;
+    }
+
+    .steps {
+        width: 290px;
     }
 }
