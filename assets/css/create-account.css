@@ -36,6 +36,7 @@ body {
     width: 12.73px;
     height: 12.73px;
     margin-left: 32px;
+    cursor: pointer;
 }
 
 .create-account__content {
@@ -100,11 +101,6 @@ body {
         max-width: 100%;
         max-width: 100%;
     }
-
-    .steps {
-        margin: 32px 0;
-        width: 300px;
-    }
     
     .create-account__input {
         font-size: .875rem;
@@ -120,14 +116,9 @@ body {
 
 @media screen and (min-width: 768px) {
     .header {
-        width: 450px;
+        width: 475px;
         max-width: 100%;
         max-width: 100%;
-    }
-
-    .steps {
-        margin: 32px 0;
-        width: 330px;
     }
     
     .create-account__input {
@@ -143,14 +134,12 @@ body {
 
 @media screen and (min-width: 992px) {
     .header {
-        width: 550px;
-        max-width: 100%;
-        max-width: 100%;
+        width: 580px;
     }
 
     .steps {
         margin: 32px 0;
-        width: 330px;
+        width: 250px;
     }
     
     .create-account__input {
@@ -167,13 +156,11 @@ body {
 @media screen and (min-width: 1200px) {
     .header {
         width: 600px;
-        max-width: 100%;
-        max-width: 100%;
     }
 
     .steps {
         margin: 32px 0;
-        width: 330px;
+        width: 270px;
     }
     
     .create-account__input {
@@ -196,7 +183,7 @@ body {
 
     .steps {
         margin: 32px 0;
-        width: 350px;
+        width: 300px;
     }
     
     .create-account__input {
