@@ -13,7 +13,7 @@
         <main class="display-grid">
             <div>
                 <header class="header">
-                    <img class="arrow" src="../../assets/img/arrow.png" alt="">
+                    <img onclick="navigateTo('../create-account/create-account.html')" class="arrow" src="../../assets/img/arrow.png" alt="<">
                 </header>
                 <section class="authentication-content">
                     <img class="authentication-step" src="../../assets/img/Steps2.png" alt="Step2">
@@ -34,15 +34,11 @@
                 </section>
             </div>
             <div class="authentication-button">
-                <button type="submit" class="btn green" onclick="irParaOutraPagina()">Next</button>
+                <button type="submit" class="btn green" onclick="navigateTo('../verify/verify.html')">Next</button>
             </div>
         </main>
 
 
 </body>
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../verify/verify.html';
-        }
-    </script>
+    <script src="../../assets/javascript/pages.js"></script>
 </html>
