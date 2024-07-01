@@ -35,6 +35,7 @@ body {
   width: 6px;
   height: 10px;
   margin-left: 32px;
+  cursor: pointer;
 }
 
 .authentication-content {
@@ -79,7 +80,6 @@ body {
   width: 82px;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding-left: 16px;
 }
 
 .authentication-button {
@@ -91,7 +91,6 @@ body {
   cursor: pointer;
   font-size: 16px;
   filter: invert(1);
-  margin-right: 16px;
 }
 
 .authentication-input::-webkit-inner-spin-button {
@@ -101,88 +100,63 @@ body {
 @media screen and (min-width: 576px) {
   .header {
     width: 400px;
-    max-width: 100%;
-    height: 56px;
+  }
+  .authentication-input {
+    width: 215px;
+  }
+  
+  .authentication-input.sm {
+    width: 80px;
   }
 
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    width: 430px;
-    max-width: 100%;
-    height: 56px;
+    width: 475px;
   }
 
   .description {
-    height: 100px;
     width: 350px;
   }
 
-  .authentication-step {
-    width: 270px;
-  }
-
   .authentication-input {
-    font-size: 0.875rem;
-    height: 50px;
-    width: 250px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
+    width: 305px;
   }
   
   .authentication-input.sm {
-    height: 50px;
     width: 90px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
   }
 
 }
 
 @media screen and (min-width: 992px) {
   .header {
-    width: 450px;
-    max-width: 100%;
-    height: 56px;
+    width: 570px;
   }
 
   .description {
-    height: 100px;
     width: 450px;
     font-size: 1.125rem;
   }
 
   .authentication-step {
-    width: 280px;
+    width: 250px;
   }
 
   .authentication-input {
-    font-size: 0.875rem;
-    height: 50px;
-    width: 320px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
+    width: 375px;
   }
   
   .authentication-input.sm {
-    height: 50px;
-    width: 130px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
+    width: 120px;
   }
 
 }
 
 @media screen and (min-width: 1200px) {
   .header {
-    width: 550px;
-    max-width: 100%;
-    height: 56px;
+    width: 600px;
   }
 
   .description {
@@ -192,36 +166,24 @@ body {
   }
 
   .authentication-step {
-    width: 300px;
+    width: 270px;
   }
 
   .authentication-input {
-    font-size: 0.875rem;
-    height: 50px;
-    width: 350px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
+    width: 404px;
   }
   
   .authentication-input.sm {
-    height: 50px;
     width: 130px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .header {
-    width: 600px;
-    max-width: 100%;
-    height: 56px;
+    width: 660px;
   }
 
   .description {
-    height: 100px;
     width: 500px;
     font-size: 1.125rem;
   }
@@ -231,19 +193,10 @@ body {
   }
 
   .authentication-input {
-    font-size: 0.875rem;
-    height: 50px;
-    width: 380px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
+    width: 444px;
   }
   
   .authentication-input.sm {
-    height: 50px;
-    width: 130px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding-left: 16px;
+    width: 140px;
   }
 }
