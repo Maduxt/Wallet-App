@@ -33,6 +33,7 @@ body {
 .arrow {
     width: 6px;
     height: 10px;
+    cursor: pointer;
 }
 
 .description {
@@ -121,4 +122,130 @@ body {
 .verify-button {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 576px) {
+    .header {
+        width: 350px;
+    }
+
+    .description {
+        width: 350px;
+
+    }
+    
+    .verify-input {
+        width: 350px;
+    }
+
+    .verify-input__sm {
+        width: 80px;
+    }
+
+    .verify-input__lg {
+        width: 254px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        width: 411px;
+    }
+    .description {
+        width: 380px;
+
+    }
+    
+    .verify-input {
+        width: 411px;
+    }
+
+    .verify-input__sm {
+        width: 100px;
+    }
+
+    .verify-input__lg {
+        width: 295px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        width: 511px;
+    }
+    .description {
+        width: 420px;
+
+    }
+
+    .verify-step {
+        width: 250px;
+    }
+    
+    .verify-input {
+        width: 511px;
+    }
+
+    .verify-input__sm {
+        width: 120px;
+    }
+
+    .verify-input__lg {
+        width: 375px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        width: 550px;
+    }
+    .description {
+        width: 460px;
+
+    }
+
+    .verify-step {
+        width: 280px;
+    }
+    
+    .verify-input {
+        width: 550px;
+    }
+
+    .verify-input__sm {
+        width: 130px;
+    }
+
+    .verify-input__lg {
+        width: 404px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        width: 600px;
+    }
+
+    .description {
+        width: 460px;
+
+    }
+
+    .verify-step {
+        width: 300px;
+    }
+    
+    .verify-input {
+        width: 600px;
+    }
+
+    .verify-input__sm {
+        width: 140px;
+    }
+
+    .verify-input__lg {
+        width: 444px;
+    }
 }

@@ -14,13 +14,13 @@
     <main class="verify-container">
         <div>
             <header class="header">
-                <img class="arrow" src="../../assets/img/arrow.png" alt="arrow">
+                <img onclick="navigateTo('../authentication/authentication.html')" class="arrow" src="../../assets/img/arrow.png" alt="arrow">
             </header>
             <div class="verify-content">
                 <img class="verify-step" src="../../assets/img/Steps3.png" alt="Step3">
                 <div class="description">
-                    <h2>Verify your Identity</h2>
-                    <p>
+                    <h2 class="description-title">Verify your Identity</h2>
+                    <p class="description-paragraph">
                         We would need some of your personal info in
                         order to protect you from fraud and theft but
                         also to stay compliant with the regulations.
@@ -33,17 +33,17 @@
                     </div>
                     <div class="input">
                         <label class="verify-label" for="personal-id-number">Personal Id Number</label>
-                        <input class="verify-input no-spin" type="number" name="id-number" id="id-number" required placeholder="1234567890">
+                        <input class="verify-input no-spin" type="number" name="id-number" id="id-number" placeholder="1234567890" required>
                     </div>
                     <div class="input">
                         <label class="verify-label" for="residential-address">Residential Adress</label>
-                        <input class="verify-input" type="text" name="adress" id="adress" required placeholder="Bulevar dr Zorana Djindjica 125/4"> 
+                        <input class="verify-input" type="text" name="adress" id="adress" placeholder="Bulevar dr Zorana Djindjica 125/4" required> 
                     </div>
                     <div class="input">
                         <label class="verify-label" for="zip-country">ZIP/Country</label>
                         <div>
-                            <input class="verify-input__sm" type="number" name="zip" id="zip" required placeholder="18000">
-                            <input class="verify-input__lg" type="text" name="country" id="country" required placeholder="Serbia">
+                            <input class="verify-input__sm" type="number" name="zip" id="zip" placeholder="18000" required>
+                            <input class="verify-input__lg" type="text" name="country" id="country" placeholder="Serbia" required>
                         </div>
                     </div>
                 </form>
