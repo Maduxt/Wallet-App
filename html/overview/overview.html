@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../css/global.css">
-    <link rel="stylesheet" href="../../../css/button.css">
-    <link rel="stylesheet" href="./overview.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/button.css">
+    <link rel="stylesheet" href="../../assets/css/overview.css">
+   
     <title>Overview</title>
+
+    <link rel="icon" href="../../assets/img/logo.svg" type="image/x-icon">
 </head>
 <body>
     <section class="container">
         <header class="header">
-            <img class="arrowLeft" src="../../../assets/arrowLeft.png" alt="<">
+            <img class="arrowLeft" src="../../assets/img/arrowLeft.png" alt="<">
             <h2>Overview</h2>
         </header>
-        <img class="step" src="../../../assets/step2-3.png" alt="- - -">
+        <div class="step">
+            <img src="../../assets/img/step2-3.png" alt="- - -">
+        </div>
         <section class="data">
             <div class="transfer">
                 <p>Transfer amount</p>
@@ -40,25 +45,24 @@
                     <i class="fa fa-question-circle" aria-hidden="true"></i> 
                     <p class="new">NEW</p>
                 </div>
-                <img class="switch" src="../../../assets/Switch.png" alt="switch">
+                <button id="toggleButton"><i class="fa-regular fa-circle"></i></button>
             </div>
-            <pre class="pre">
-* This feature requires additional verification steps during the
-transaction in order to avoid any potential errors.
-            </pre>
+            <p class="pre">
+            * This feature requires additional verification steps during the
+            transaction in order to avoid any potential errors.
+            </p>
         </section>
         <section class="total">
-            <p>TOTAL</p>
-            <p>ETH 1.2625</p>
+            <div>
+                <p>TOTAL</p>
+                <p>ETH 1.2625</p>
+            </div>
         </section>
-        <button class="btn green" onclick="irParaOutraPagina()">Confirm Transaction</button>
+        <button class="btn green" onclick="navigateTo('../done/done.html')">Confirm Transaction</button>
     </section>
 
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../done/done.html';
-        }
-    </script>
+    <script src="../../assets/javascript/pages.js"></script>
+    <script src="../../assets/javascript/toggle.js"></script>
 
 </body>
 </html>
