@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../css/global.css">
-    <link rel="stylesheet" href="../../../css/button.css">
-    <link rel="stylesheet" href="./send-coin.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/button.css">
+    <link rel="stylesheet" href="../../assets/css/send-coin.css">
+    
     <title>Send Coin</title>
+
+    <link rel="icon" href="../../assets/img/logo.svg" type="image/x-icon">
 </head>
 <body>
     <section class="container">
         <header class="header">
-            <img class="arrowLeft" src="../../../assets/arrowLeft.png" alt="<">
+            <img class="arrowLeft" src="../../assets/img/arrowLeft.png" alt="<">
             <h2>Send ETH</h2>
         </header>
 
-        <img class="steps" src="../../../assets/step1-3.png" alt="- - -">
-
-        <div class="title">
-            <p>ETH 1.25</p>
-        </div>
-        <section class="container-form">
-            <p class="label">Receiver Wallet Address</p>
-            <p class="input">0xc4c16a6451e99423a4ed27608a15a... b21a</p>
+        <section>
+            <div class="steps">
+                <img src="../../assets/img/step1-3.png" alt="- - -">
+                <p class="title">ETH 1.25</p>
+            </div>
         </section>
-        <div class="content-paragraph">
-            <pre class="pre">* Please always double check the info you enter. The transaction
-you’re about to make is irreversible if you do not activate the 
-Double Check feature.
-            </pre>
-        </div>
+        
+        <section class="content-form">
+            <div class="form">
+                <p class="label">Receiver Wallet Address</p>
+                <p class="input">0xc4c16a6451e99423a4ed27608a15a... b21a</p>
+            </div>
+            <div class="content-paragraph">
+                <p class="pre">* Please always double check the info you enter. The transaction
+                    you’re about to make is irreversible if you do not activate the 
+                    <span class="span">Double Check</span> feature.
+                </p>
+            </div>
+        </section>
+        
 
         <section class="container-numbers">
             <div class="content">
@@ -55,14 +63,10 @@ Double Check feature.
             </div>
         </section>
 
-            <button onclick="irParaOutraPagina()" class="btn green">Go to Overview</button>
+            <button onclick="navigateTo('../overview/overview.html')" class="btn green button">Go to Overview</button>
     </section>
 
-    <script>
-        function irParaOutraPagina() {
-          window.location.href = '../overview/overview.html';
-        }
-    </script>
+    <script src="../../assets/javascript/pages.js"></script>
 
 </body>
 
