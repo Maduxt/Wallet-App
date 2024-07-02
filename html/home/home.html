@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../assets/css/button.css">
     <link rel="stylesheet" href="../../assets/css/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="../../assets/img/logo.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -160,7 +161,7 @@
                         </div>
                     </div>
                 </button>
-                <button onclick="irParaOutraPagina()" class="portfolio-list">
+                <button onclick="navigateTo('../coin/coin.html')" class="portfolio-list">
                     <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -173,7 +174,7 @@
                         </div>
                     </div>
                 </button>
-                <button onclick="irParaOutraPagina()" class="portfolio-list">
+                <button onclick="navigateTo('../coin/coin.html')" class="portfolio-list">
                     <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -186,7 +187,7 @@
                         </div>
                     </div>
                 </button>
-                <button onclick="irParaOutraPagina()" class="portfolio-list">
+                <button onclick="navigateTo('../coin/coin.html')" class="portfolio-list">
                     <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -199,7 +200,7 @@
                         </div>
                     </div>
                 </button>
-                <button onclick="irParaOutraPagina()" class="portfolio-list">
+                <button onclick="navigateTo('../coin/coin.html')" class="portfolio-list">
                     <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -212,7 +213,7 @@
                         </div>
                     </div>
                 </button>
-                <button onclick="irParaOutraPagina()" class="portfolio-list">
+                <button onclick="navigateTo('../coin/coin.html')" class="portfolio-list">
                     <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
                     <div class="portfolio-content">
                         <div>
@@ -232,7 +233,7 @@
         <div class="menu" id="toggleComponent">
             <div class="flex-menu">
                 <div class="button-text">
-                    <button class="button-menu-toggle"><img src="../../assets/img/buyButton.png" alt="Buy"></button>
+                    <button onclick="navigateTo('../send-assets/send-assets.html')" class="button-menu-toggle"><img src="../../assets/img/buyButton.png" alt="Buy"></button>
                     <h4 h4 class="subtitle-button">Buy</h4>
                 </div>
                 <div class="button-text">
@@ -269,16 +270,6 @@
     <script src="../../assets/javascript/menu-footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../../assets/javascript/push-event.js"></script>
-<script>
-document.getElementById('toggle-input-image').addEventListener('click', function() {
-    const searchInput = document.getElementById('search-input');
-    if (searchInput.style.display === 'none' || searchInput.style.display === '') {
-        searchInput.style.display = 'block';
-    } else {
-        searchInput.style.display = 'none';
-    }
-});
-</script>
 
 </body>
 </html>

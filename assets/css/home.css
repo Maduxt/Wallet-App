@@ -474,6 +474,10 @@ body {
     width: 698px;
   }
 
+  .menu {
+    width: 600px;
+  }
+
 
 }
 
@@ -540,5 +544,9 @@ body {
 
   .portfolio-content {
     width: 992px;
+  }
+
+  .menu {
+    width: 768px;
   }
 }
