@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./send-assets.css">
-    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../assets/css/send-assets.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../coin/coin.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
     <title>Send Assets</title>
+    
+    <link rel="icon" href="../../assets/img/logo.svg" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <img class="closeIcon" src="../../assets/closeIcon.png" alt="X">
+            <img onclick="navigateTo('../home/home.html')" class="closeIcon" src="../../assets/img/closeIcon.png" alt="X">
             <h2>Select asset to send</h2>
         </header>
 
         <section class="input">
             <i class="fa fa-search" aria-hidden="true"></i>
             <input class="search" type="search" name="search" id="search" placeholder="Search...">
-            <select class="select" name="select" id="select"></select>
+            <select class="select" name="select" id="select">
+                <option>Select</option>
+                <option value="">Ethereum</option>
+                <option value="">Bitcoin</option>
+                <option value="">XRP</option>
+                <option value="">Litcoin</option>
+                <option value="">Graphite Scull</option>
+                <option value="">Network</option>
+                <option value="">Network</option>
+                <option value="">Network</option>
+            </select>
         </section>
         
         <section class="portfolio">
         <div>
-                <div onclick="irParaOutraPagina()" class="portfolio-list">
-                    <img class="img-interprise" src="../../assets/ETH.png" alt="ETH">
+                <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                    <img class="img-interprise" src="../../assets/img/ETH.png" alt="ETH">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">ETH</h3>
@@ -37,8 +51,8 @@
                 </div>
         </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/BTC.png" alt="BTC">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">BTC</h3>
@@ -52,8 +66,8 @@
                 </div>
             </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/XRP.png" alt="XRP">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/XRP.png" alt="XRP">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">XRP</h3>
@@ -67,8 +81,8 @@
                 </div>
             </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/LTC.png" alt="BTC">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/LTC.png" alt="BTC">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">LTC</h3>
@@ -82,8 +96,8 @@
                 </div>
             </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/Scull.png" alt="NFT">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/Scull.png" alt="NFT">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">Graphite Scull</h3>
@@ -97,8 +111,8 @@
                 </div>
             </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/Litecoin.png" alt="NFT">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/Litecoin.png" alt="NFT">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">Network</h3>
@@ -112,8 +126,8 @@
                 </div>
             </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/Litecoin2.png" alt="NFT">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/Litecoin2.png" alt="NFT">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">Network</h3>
@@ -127,8 +141,8 @@
                 </div>
             </div>
 
-            <div onclick="irParaOutraPagina()" class="portfolio-list">
-                <img class="img-interprise" src="../../assets/Litecoin3.png" alt="BTC">
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/Litecoin3.png" alt="BTC">
                 <div class="portfolio-content">
                     <div>
                         <h3 class="eth-btc">Network</h3>
@@ -142,15 +156,101 @@
                 </div>
             </div>
 
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">Coin</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">Coin</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">Coin</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">Coin</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">Coin</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="navigateTo('../send-coin/send-coin.html')" class="portfolio-list">
+                <img class="img-interprise" src="../../assets/img/BTC.png" alt="BTC">
+                <div class="portfolio-content">
+                    <div>
+                        <h3 class="eth-btc">BTC</h3>
+                        <p class="value-eth">Coin</p> 
+                        <!-- 12 de espaçamento entre os itens. precisa ter 188 de altura no total -->
+                    </div>
+                    <div class="values">
+                        <p class="eth-btc">$2.890,00</p>
+                        <p class="cripto-decrease">0.10 BTC</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 </div>
 
-<script>
-    function irParaOutraPagina() {
-      window.location.href = './send-coin/send-coin.html';
-    }
-</script>
+<script src="../../assets/javascript/pages.js"></script>
 
 </body>
 </html>
